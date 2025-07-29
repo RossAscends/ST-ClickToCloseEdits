@@ -1,6 +1,5 @@
 # Click Away To Close Edits
 
-- requires 'click to edit' is CHECKED in user settings
 - does not make an entry in Extensions menu
 - has no customization settings
 
