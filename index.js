@@ -5,7 +5,7 @@ import { delay } from '../../../utils.js';
 jQuery(async () => {
 
     //detect when a user clicks anywhere in the window
-    $(window).on('mouseup', async (event) => {
+    $(window).on('mousedown', async (event) => {
         //const isClickToEditOn = power_user.click_to_edit;
         const DoescurEditTextareaExist = $('#curEditTextarea').length > 0;
         //if there's no open edit box, do nothing
