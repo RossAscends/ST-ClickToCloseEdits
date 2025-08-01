@@ -17,9 +17,10 @@ jQuery(async () => {
         //get the click target
         const target = event.target;
         const $target = $(target);
+        const $mes = $('#curEditTextarea').parent().parent();
 
-        if (target.id !== 'curEditTextarea' && !$target.hasClass('mes_edit_done')) {
-            const editDoneButton = $('#curEditTextarea').parent().parent().find('.mes_edit_done');
+        if (!$target.hasClass('mes_edit_done') && !$target.is($mes) && !$mes[0].contains(target)) {
+            const editDoneButton = $mes.find('.mes_edit_done');
             if (!editDoneButton.length) {
                 return;
             }
